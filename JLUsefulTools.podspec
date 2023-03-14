@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'JLUsefulTools/Classes/**/*'
-  
+  s.swift_versions = '5.0'
   # s.resource_bundles = {
   #   'JLUsefulTools' => ['JLUsefulTools/Assets/*.png']
   # }

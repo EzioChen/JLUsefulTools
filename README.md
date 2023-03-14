@@ -1,6 +1,6 @@
 # JLUsefulTools
 
-[![CI Status](https://img.shields.io/travis/16658670/JLUsefulTools.svg?style=flat)](https://travis-ci.org/16658670/JLUsefulTools)
+[![CI Status](https://img.shields.io/travis/EzioChen/JLUsefulTools.svg?style=flat)](https://travis-ci.org/EzioChen/JLUsefulTools)
 [![Version](https://img.shields.io/cocoapods/v/JLUsefulTools.svg?style=flat)](https://cocoapods.org/pods/JLUsefulTools)
 [![License](https://img.shields.io/cocoapods/l/JLUsefulTools.svg?style=flat)](https://cocoapods.org/pods/JLUsefulTools)
 [![Platform](https://img.shields.io/cocoapods/p/JLUsefulTools.svg?style=flat)](https://cocoapods.org/pods/JLUsefulTools)
