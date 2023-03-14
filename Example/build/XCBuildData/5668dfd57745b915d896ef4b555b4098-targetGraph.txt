@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+JLUsefulTools in Pods, no dependencies
+Pods-JLUsefulTools_Example in Pods, depends on:
+JLUsefulTools in Pods (explicit)
+Pods-JLUsefulTools_Tests in Pods, depends on:
+Pods-JLUsefulTools_Example in Pods (explicit)

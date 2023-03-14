@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JLUsefulTools'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of JLUsefulTools.'
+  s.version          = '0.0.1'
+  s.summary          = '一个用于数据处理的库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '基本内容包括数据大小端转换/Data的裁剪/数据打包等内容'
 
-  s.homepage         = 'https://github.com/16658670/JLUsefulTools'
+  s.homepage         = 'https://github.com/EzioChen/JLUsefulTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '16658670' => 'jackenwind@163.com' }
-  s.source           = { :git => 'https://github.com/16658670/JLUsefulTools.git', :tag => s.version.to_s }
+  s.license          = 'MIT'
+  s.author           = { 'EzioChan' => 'jackenwind@163.com' }
+  s.source           = { :git => 'https://github.com/EzioChen/JLUsefulTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
@@ -35,7 +33,7 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'JLUsefulTools' => ['JLUsefulTools/Assets/*.png']
   # }
-
+ 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

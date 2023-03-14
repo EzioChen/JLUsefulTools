@@ -1,0 +1,51 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98c1298369dde123a6822734b891e4b949"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e983174d687026911af187558a37098c53b"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e982214bf58c61ccfa634ba4e98efbc7bb8"
+    }
+  ],
+  "containerPath" : "/Users/jieli/Desktop/JLUsefulTools/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/jieli/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jieli/Library/Developer/Xcode/DerivedData/Pods-buatfmckrnhaihfbuzgqjsetnwqj/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jieli/Library/Developer/Xcode/DerivedData/Pods-buatfmckrnhaihfbuzgqjsetnwqj/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
