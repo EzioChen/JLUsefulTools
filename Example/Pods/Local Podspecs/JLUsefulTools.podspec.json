@@ -1,0 +1,22 @@
+{
+  "name": "JLUsefulTools",
+  "version": "0.1.0",
+  "summary": "A short description of JLUsefulTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/16658670/JLUsefulTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "16658670": "jackenwind@163.com"
+  },
+  "source": {
+    "git": "https://github.com/16658670/JLUsefulTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "JLUsefulTools/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module JLUsefulTools {
+  umbrella header "JLUsefulTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
