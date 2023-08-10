@@ -67,7 +67,7 @@ public func ECPrintInfo(_ any:Any,_ obj:Any,_ funcName:Any,_ line:Int){
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     
-    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n",any,"\n")
+    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"func:+\(funcName)\n\(any)\n")
     }
@@ -79,7 +79,7 @@ public func ECPrintDebug(_ any:Any,_ obj:Any,_ funcName:Any,_ line:Int){
     let date = Date()
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n",any,"\n")
+    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"func:+\(funcName)\n\(any)\n")
     }
@@ -92,7 +92,7 @@ public func ECPrintWarning(_ any:Any,_ obj:Any,_ funcName:Any,_ line:Int){
     let date = Date()
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n",any,"\n")
+    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"func:+\(funcName)\n\(any)\n")
     }
@@ -105,7 +105,7 @@ public func ECPrintError(_ any:Any,_ obj:Any,_ funcName:Any,_ line:Int){
     let date = Date()
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n",any,"\n")
+    print(timeFormatter.string(from: date),obj,"func:",funcName,"line:",line,"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"func:+\(funcName)\n\(any)\n")
     }
@@ -127,7 +127,7 @@ public func ECPrint(_ any:Any,_ obj:Any){
     let date = Date()
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    print(timeFormatter.string(from: date),obj,"\n",any,"\n")
+    print(timeFormatter.string(from: date),obj,"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"\(any)\n")
     }
@@ -138,7 +138,7 @@ public func ECPrint(_ any:Any){
     let date = Date()
     let timeFormatter = DateFormatter()
     timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    print(timeFormatter.string(from: date),"\n",any,"\n")
+    print(timeFormatter.string(from: date),"\n====>",any,"\n")
     if logIsSave {
         SaveLog.share.save(str: timeFormatter.string(from: date)+"\(any)\n")
     }
