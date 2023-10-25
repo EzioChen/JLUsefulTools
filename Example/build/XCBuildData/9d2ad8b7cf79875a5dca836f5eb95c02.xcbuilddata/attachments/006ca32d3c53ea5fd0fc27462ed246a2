@@ -1,0 +1,75 @@
+{
+  "" : {
+    "const-values" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master.swiftconstvalues",
+    "dependencies" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master.d",
+    "diagnostics" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master.dia",
+    "emit-module-dependencies" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master-emit-module.dia",
+    "swift-dependencies" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributes-master.swiftdeps"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Attribute.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Attribute+Sequence.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute+Sequence.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute+Sequence.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Attribute+Sequence.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Ligatures.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Ligatures.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Ligatures.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Ligatures.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/NSAttributedString+SwiftyAttributes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSAttributedString+SwiftyAttributes.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSAttributedString+SwiftyAttributes.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSAttributedString+SwiftyAttributes.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/NSMutableAttributedString+SwiftyAttributes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSMutableAttributedString+SwiftyAttributes.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSMutableAttributedString+SwiftyAttributes.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSMutableAttributedString+SwiftyAttributes.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/NSString+SwiftyAttributes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSString+SwiftyAttributes.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSString+SwiftyAttributes.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/NSString+SwiftyAttributes.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/Operators.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Operators.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Operators.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/Operators.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/String+SwiftyAttributes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/String+SwiftyAttributes.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/String+SwiftyAttributes.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/String+SwiftyAttributes.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/SwiftyAttributedStringBuilder.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributedStringBuilder.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributedStringBuilder.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/SwiftyAttributedStringBuilder.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/TextEffect.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/TextEffect.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/TextEffect.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/TextEffect.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/VerticalGlyphForm.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/VerticalGlyphForm.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/VerticalGlyphForm.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/VerticalGlyphForm.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/common/WritingDirection.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/WritingDirection.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/WritingDirection.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/WritingDirection.o"
+  },
+  "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/Pods/SwiftyAttributes/SwiftyAttributes/Sources/iOS_tvOS/UIKit+SwiftyAttributes.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/UIKit+SwiftyAttributes.o",
+    "llvm-bc" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/UIKit+SwiftyAttributes.bc",
+    "object" : "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/Objects-normal/arm64/UIKit+SwiftyAttributes.o"
+  }
+}

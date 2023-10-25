@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Release-iphoneos/SwiftyAttributes/SwiftyAttributes.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Release-iphoneos/SwiftyAttributes/SwiftyAttributes.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "SwiftyAttributes-Swift.h",
+      'external-contents': "/Volumes/O/AAASVN/SVN/Swift_Ble/trunk/JLUsefulTools/Example/build/Pods.build/Release-iphoneos/SwiftyAttributes.build/unextended-interface-header.h",
+    }]
+    }]
+}

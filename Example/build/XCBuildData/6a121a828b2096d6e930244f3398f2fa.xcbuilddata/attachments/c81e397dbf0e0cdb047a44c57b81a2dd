@@ -1,0 +1,6 @@
+framework module Pods_JLUsefulTools_Example {
+  umbrella header "Pods-JLUsefulTools_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

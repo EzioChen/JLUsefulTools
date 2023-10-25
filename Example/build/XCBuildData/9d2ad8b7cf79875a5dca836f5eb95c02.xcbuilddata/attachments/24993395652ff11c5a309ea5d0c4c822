@@ -1,0 +1,10 @@
+framework module SwiftyAttributes {
+  umbrella header "SwiftyAttributes-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyAttributes.__Swift {
+  exclude header "SwiftyAttributes-Swift.h"
+}

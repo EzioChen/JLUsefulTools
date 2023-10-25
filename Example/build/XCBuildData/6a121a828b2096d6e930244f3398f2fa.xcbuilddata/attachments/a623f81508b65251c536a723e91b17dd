@@ -1,0 +1,5 @@
+ extern const unsigned char JLUsefulToolsVersionString[];
+ extern const double JLUsefulToolsVersionNumber;
+
+ const unsigned char JLUsefulToolsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:JLUsefulTools  PROJECT:Pods-1" "\n";
+ const double JLUsefulToolsVersionNumber __attribute__ ((used)) = (double)1.;

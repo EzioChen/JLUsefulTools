@@ -13,7 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A1F82F8C4ECA83416FBEFCA5 /* Pods_JLUsefulTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9B54FC86535AD044AC6D34 /* Pods_JLUsefulTools_Tests.framework */; };
+		B335B294BD1B1659C60B427F /* Pods_JLUsefulTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3553142B939A7220E7CE8EB /* Pods_JLUsefulTools_Tests.framework */; };
 		F239DCCC55C0177EE03DB874 /* Pods_JLUsefulTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE5636892869AD0CFEBD9F /* Pods_JLUsefulTools_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		168BCD10B7DDEBEF713C47C0 /* Pods-JLUsefulTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Tests/Pods-JLUsefulTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A9B54FC86535AD044AC6D34 /* Pods_JLUsefulTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLUsefulTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEE5636892869AD0CFEBD9F /* Pods_JLUsefulTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLUsefulTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54515E168C6FB2949170D2B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		600BC842F547B9F8B3A8AE28 /* Pods-JLUsefulTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Tests/Pods-JLUsefulTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JLUsefulTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLUsefulTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62CDE00790ABB6A3826052A3 /* Pods-JLUsefulTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Example.debug.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		823412FDFF90A91E6D8AFF50 /* Pods-JLUsefulTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Tests/Pods-JLUsefulTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A6C8D510F3E20FF86CE93A04 /* Pods-JLUsefulTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Example.release.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B376A7D4A09CBE9498CDF093 /* JLUsefulTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JLUsefulTools.podspec; path = ../JLUsefulTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD94FCD1F97760B70A9E62FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F6653F1F349D04C975D87B17 /* Pods-JLUsefulTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLUsefulTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-JLUsefulTools_Tests/Pods-JLUsefulTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D3553142B939A7220E7CE8EB /* Pods_JLUsefulTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLUsefulTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F82F8C4ECA83416FBEFCA5 /* Pods_JLUsefulTools_Tests.framework in Frameworks */,
+				B335B294BD1B1659C60B427F /* Pods_JLUsefulTools_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1FEE5636892869AD0CFEBD9F /* Pods_JLUsefulTools_Example.framework */,
-				1A9B54FC86535AD044AC6D34 /* Pods_JLUsefulTools_Tests.framework */,
+				D3553142B939A7220E7CE8EB /* Pods_JLUsefulTools_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 			children = (
 				62CDE00790ABB6A3826052A3 /* Pods-JLUsefulTools_Example.debug.xcconfig */,
 				A6C8D510F3E20FF86CE93A04 /* Pods-JLUsefulTools_Example.release.xcconfig */,
-				168BCD10B7DDEBEF713C47C0 /* Pods-JLUsefulTools_Tests.debug.xcconfig */,
-				F6653F1F349D04C975D87B17 /* Pods-JLUsefulTools_Tests.release.xcconfig */,
+				600BC842F547B9F8B3A8AE28 /* Pods-JLUsefulTools_Tests.debug.xcconfig */,
+				823412FDFF90A91E6D8AFF50 /* Pods-JLUsefulTools_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JLUsefulTools_Tests" */;
 			buildPhases = (
-				39149DE55C368BE6BAB93765 /* [CP] Check Pods Manifest.lock */,
+				56B6CC6B0CF180B649D8A72F /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -266,7 +266,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39149DE55C368BE6BAB93765 /* [CP] Check Pods Manifest.lock */ = {
+		521096608FAA6F8B4654482A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JLUsefulTools/JLUsefulTools.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyAttributes/SwiftyAttributes.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLUsefulTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAttributes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B6CC6B0CF180B649D8A72F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,24 +316,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		521096608FAA6F8B4654482A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JLUsefulTools/JLUsefulTools.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLUsefulTools.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLUsefulTools_Example/Pods-JLUsefulTools_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D0D26C568400BA3C4D83F73 /* [CP] Check Pods Manifest.lock */ = {
@@ -486,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8GU9SL7NG;
 				INFOPLIST_FILE = JLUsefulTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -506,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8GU9SL7NG;
 				INFOPLIST_FILE = JLUsefulTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -519,7 +531,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 168BCD10B7DDEBEF713C47C0 /* Pods-JLUsefulTools_Tests.debug.xcconfig */;
+			baseConfigurationReference = 600BC842F547B9F8B3A8AE28 /* Pods-JLUsefulTools_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEVELOPMENT_TEAM = J8GU9SL7NG;
@@ -532,7 +544,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,7 +556,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6653F1F349D04C975D87B17 /* Pods-JLUsefulTools_Tests.release.xcconfig */;
+			baseConfigurationReference = 823412FDFF90A91E6D8AFF50 /* Pods-JLUsefulTools_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				DEVELOPMENT_TEAM = J8GU9SL7NG;
@@ -553,7 +565,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

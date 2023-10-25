@@ -1,13 +1,18 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'JLUsefulTools_Example' do
-  pod 'JLUsefulTools', :path => '../'
 
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SnapKit'
+  
+  pod 'JLUsefulTools', :path => '../'
+  
   target 'JLUsefulTools_Tests' do
     inherit! :search_paths
-
-    
   end
+  
+  
 end

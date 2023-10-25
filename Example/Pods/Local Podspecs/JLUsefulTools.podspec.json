@@ -1,22 +1,38 @@
 {
   "name": "JLUsefulTools",
   "version": "0.1.0",
-  "summary": "A short description of JLUsefulTools.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/16658670/JLUsefulTools",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "summary": "一个用于数据处理的库",
+  "description": "基本内容包括数据大小端转换/Data的裁剪/数据打包/基础UI等内容",
+  "homepage": "https://github.com/EzioChen/JLUsefulTools",
+  "license": "MIT",
   "authors": {
-    "16658670": "jackenwind@163.com"
+    "EzioChan": "jackenwind@163.com"
   },
   "source": {
-    "git": "https://github.com/16658670/JLUsefulTools.git",
+    "git": "https://github.com/EzioChen/JLUsefulTools.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
-  "source_files": "JLUsefulTools/Classes/**/*"
+  "source_files": "JLUsefulTools/Classes/**/*",
+  "swift_versions": "5.0",
+  "dependencies": {
+    "Alamofire": [
+      ">= 5.0.0"
+    ],
+    "SnapKit": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "SwiftyAttributes": [
+      "5.3.0"
+    ]
+  },
+  "swift_version": "5.0"
 }
