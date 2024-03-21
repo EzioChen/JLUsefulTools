@@ -1,26 +1,20 @@
 PODS:
-  - Alamofire (5.8.0)
-  - JLUsefulTools (0.1.0):
+  - Alamofire (5.9.0)
+  - JLUsefulTools (0.0.3):
     - Alamofire (>= 5.0.0)
     - RxCocoa
     - RxSwift
     - SnapKit
-    - SwiftyAttributes (= 5.3.0)
   - RxCocoa (6.6.0):
     - RxRelay (= 6.6.0)
     - RxSwift (= 6.6.0)
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
-  - SnapKit (5.6.0)
-  - SwiftyAttributes (5.3.0)
+  - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - JLUsefulTools (from `../`)
-  - RxCocoa
-  - RxSwift
-  - SnapKit
-  - SwiftyAttributes (= 5.3.0)
 
 SPEC REPOS:
   trunk:
@@ -29,21 +23,19 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
-    - SwiftyAttributes
 
 EXTERNAL SOURCES:
   JLUsefulTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
-  JLUsefulTools: cb10d844f01dc420a714bdd3a91d4210ba0953a5
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
+  JLUsefulTools: 2d75384c08b9c79ad3f2740f8250a6f197a879fe
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  SwiftyAttributes: 6d7386e90ac611b6acac8b59e38f34bfa4621c80
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 47288044a4765627e28788b9309b4aa11187b8d6
+PODFILE CHECKSUM: 1847d3743862c58af3ae86da0c4f264eba917a35
 
 COCOAPODS: 1.13.0
