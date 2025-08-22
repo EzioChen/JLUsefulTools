@@ -1,11 +1,10 @@
 //
 //  Colors.swift
-//  Alamofire
 //
 //  Created by EzioChan on 2023/10/25.
 //
 
-import Foundation
+import UIKit
 
 public extension UIColor{
     

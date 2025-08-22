@@ -7,194 +7,126 @@
 
 import Foundation
 
-public extension Data{
+public extension Data {
     
-    var eUint8:UInt8{
-        UInt8(littleEndian: [UInt8](self).first ?? 0x00)
+    /// 获取UInt8值(小端序)
+    var eUint8: UInt8 {
+        withUnsafeBytes { $0.load(as: UInt8.self) }
     }
     
-    var eUint16:UInt16{
-        if self.count<2 {
-            return 0x00
-        }else{
-            return self.withUnsafeBytes { $0.load(as: UInt16.self) }
-        }
+    /// 获取UInt16值(小端序)
+    var eUint16: UInt16 {
+        guard count >= MemoryLayout<UInt16>.size else { return 0 }
+        return withUnsafeBytes { $0.load(as: UInt16.self) }
     }
     
-    var eBool:Bool{
-        let v = UInt8(littleEndian: [UInt8](self).first ?? 0x00)
-        if v == 0x00 {
-            return false
-        }else{
-            return true
-        }
+    /// 获取Bool值
+    var eBool: Bool {
+        eUint8 != 0
     }
     
+    /// 获取UInt32值(小端序)
     var eUint32: UInt32 {
-        get {
-            let i32array = self.withUnsafeBytes { $0.load(as: UInt32.self) }
-            return i32array
-        }
-    }
-    var eint_8:Int {
-        let value = UInt8(littleEndian: [UInt8](self).first!)
-        return Int(value)
-    }
-    var eInt16BigEndian:Int {
-        var value : UInt16 = 0
-        let data = NSData(bytes: [UInt8](self), length: self.count)
-        data.getBytes(&value, length: data.count)
-        value = UInt16(bigEndian: value)
-        return Int(value)
+        guard count >= MemoryLayout<UInt32>.size else { return 0 }
+        return withUnsafeBytes { $0.load(as: UInt32.self) }
     }
     
-    var eInt16LittleEndian:Int {
-        var value : UInt16 = 0
-        let data = NSData(bytes: [UInt8](self), length: self.count)
-        data.getBytes(&value, length: data.count)
-        value = UInt16(littleEndian: value)
-        return Int(value)
+    /// 获取Int8值(小端序)
+    var eint_8: Int {
+        Int(eUint8)
     }
     
-    var eInt8Nature:Int{
-        let byte = self.eUint8
-        if byte >> 7 == 0x00 {
-            return Int(byte)
-        }
-        if byte >> 7 == 0x01 {
-            let k = 0xFF - byte + 1
-            return -Int(k)
-        }
-        return Int(byte)
+    /// 获取Int16值(大端序)
+    var eInt16BigEndian: Int {
+        Int(eUint16.byteSwapped)
     }
     
-    var eInt16Nature:Int{
-        let byte = self.eUint16.byteSwapped
-        if byte >> 15 == 0x00 {
-            return Int(byte)
-        }
-        if byte >> 15 == 0x01 {
-            let k = 0xFFFF - byte + 1
-            return -Int(k)
-        }
-        return Int(byte)
+    /// 获取Int16值(小端序)
+    var eInt16LittleEndian: Int {
+        Int(eUint16)
     }
     
-    var eInt32Nature:Int{
-        let byte = self.eUint32
-        if byte >> 31 == 0x00 {
-            return Int(byte)
-        }
-        if byte >> 31 == 0x01 {
-            let k = 0xFFFFFFFF - byte + 1
-            return -Int(k)
-        }
-        return Int(byte)
+    /// 获取自然数Int8值(考虑符号位)
+    var eInt8Nature: Int {
+        let byte = eUint8
+        return byte >> 7 == 0 ? Int(byte) : -Int(0xFF - byte + 1)
     }
     
-    var eSwapSelf:Data{
-        let list = [UInt8](self)
-        var len = list.count-1
-        var newArr:[UInt8] = []
-        while len>=0{
-            newArr.append(list[len])
-            len-=1
-        }
-        return Data(bytes: newArr, count: list.count)
+    /// 获取自然数Int16值(考虑符号位)
+    var eInt16Nature: Int {
+        let byte = eUint16
+        return byte >> 15 == 0 ? Int(byte) : -Int(0xFFFF - byte + 1)
     }
     
-//    func eHex()->String{
-//        map {
-//            String(format: "%02", $0)
-//        }.joined(separator: " ")
-//    }
-    
-    var eHex:String{
-        map{
-            String(format: "%02x", $0).uppercased()
-        }.joined()
+    /// 获取自然数Int32值(考虑符号位)
+    var eInt32Nature: Int {
+        let byte = eUint32
+        return byte >> 31 == 0 ? Int(byte) : -Int(0xFFFFFFFF - byte + 1)
     }
     
-    var eString:String {
-        var subStr:String = ""
-        for i:Int in 0..<self.count{
-            let str = self[i]
-            subStr = subStr+String.init(str)
-        }
-        return subStr
-    }
-    func eNS(num:UInt8)->Data{
-        let dt:[UInt8] = [num]
-        return dt+self
+    /// 反转字节顺序
+    var eSwapSelf: Data {
+        Data([UInt8](self).reversed())
     }
     
-    func subRange(_ location:NSInteger,_ len:NSInteger)->Data?{
-        let data = self as NSData
-        if (location + len)>data.length || len < 1 {
-            // 越界了
-//            ECPrint("stack overflow \(data.count),form:\(location),size:\(len)")
-            return nil
-        }
-        let dt = data.subdata(with: NSRange(location: location, length: len))
-        return dt
+    /// 转换为16进制字符串(大写)
+    var eHex: String {
+        map { String(format: "%02X", $0) }.joined()
+    }
+    
+    /// 转换为字符串
+    var eString: String {
+        String(decoding: self, as: UTF8.self)
+    }
+    
+    /// 在数据前添加一个字节
+    func eNS(num: UInt8) -> Data {
+        [num] + self
+    }
+    
+    /// 获取子数据
+    func eSubRange(_ location: Int, _ len: Int) -> Data? {
+        guard location + len <= count, len > 0 else { return nil }
+        return self[location..<location+len]
     }
     
     /// 数据分段
-    /// - Parameters:
-    ///   - dt: 数据
-    ///   - len: 按长度
-    /// - Returns: 分段数组
-    func sections(_ len:Int)->[Data]{
-        let dt = self
-        var arr:[Data] = []
-        let current = dt.count/Int(len)
-        for item in 0..<current {
-            let data = dt.subRange(item*len, len) ?? Data()
-            arr.append(data)
+    func sections(_ len: Int) -> [Data] {
+        stride(from: 0, to: count, by: len).map {
+            eSubRange($0, Swift.min(len, count - $0)) ?? Data()
         }
-        if current*Int(len) < dt.count {
-            let data = dt.subRange(current*len,dt.count-current*len) ?? Data()
-            arr.append(data)
-        }
-        return arr
     }
     
-    func ebeginOf(_ index:NSInteger)->Data?{
-        let data = self as NSData
-        if index>data.length {
-            ECPrint("stack overflow \(data),beginAt:\(index),size:\(data.length-index)")
-            return nil
-        }
-        let dt = data.subdata(with: NSRange(location: index, length: data.length-index))
-        return dt
+    /// 获取从指定位置开始的数据
+    func ebeginOf(_ index: Int) -> Data? {
+        guard index <= count else { return nil }
+        return self[index...]
     }
     
-    func eEndOf(_ index:NSInteger)->Data?{
-        let data = self as NSData
-        if index>data.length {
-            ECPrint("stack overflow \(data),endAt:\(index),size:\(index)")
-            return nil
-        }
-        let dt = data.subdata(with: NSRange(location: 0, length: index))
-        return dt
+    /// 获取到指定位置结束的数据
+    func eEndOf(_ index: Int) -> Data? {
+        guard index <= count else { return nil }
+        return self[..<index]
     }
 
-    
-    static func boolData(status:Bool) -> Data{
-        let u8:[UInt8] = [(status == true ? 0x01:0x00)]
-        return Data(bytes: u8, count: 1)
+    func eAppendUInt8(_ num:UInt8) -> Data {
+        self+num.eToByteData
     }
     
+    /// 创建Bool类型数据
+    static func eBoolData(status: Bool) -> Data {
+        Data([status ? 0x01 : 0x00])
+    }
 }
 
 public extension UInt8{
-    var eData:Data{
+    var eToByteData:Data{
         Data(bytes: [self], count: 1)
     }
 }
 
 public extension UInt16{
-    var eData:Data{
+    var eToByteData:Data {
         var int = self
         return Data(bytes: &int, count: MemoryLayout<UInt16>.size)
     }
@@ -205,7 +137,7 @@ public extension UInt32 {
         var int = self
         return Data(bytes: &int, count: MemoryLayout<UInt32>.size)
     }
-    var date:Date {
+    var beByteDate:Date {
         let s = self & 0x3F
         let m = (self>>6)&0x3F
         let h = (self>>12)&0x1F
@@ -216,14 +148,13 @@ public extension UInt32 {
         let fm = DateFormatter()
         fm.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let dte = fm.date(from: str) ?? Date()
-//        ECPrintError("时间转换失败",self, "\(#function)", #line)
         return dte
     }
 }
 
 
 public extension Date {
-    var data:Data{
+    var ebeByte4Data:Data {
         let fm = DateFormatter()
         fm.dateFormat = "yyyy-MM-dd-HH-mm-ss"
         let strArr = fm.string(from: self).components(separatedBy: "-")
@@ -234,8 +165,6 @@ public extension Date {
         let HH = UInt32(strArr[3])!<<12
         let mm = UInt32(strArr[4])!<<6
         let ss = UInt32(strArr[5])!
-        //
-//        ECPrintInfo("\(year.data.eHex),\(month.data.eHex),\(day.data.eHex),\(HH.data.eHex),\(mm.data.eHex),\(ss.data.eHex)",self, "\(#function)", #line)
         u32 =  u32|year|month|day|HH|mm|ss
         return u32.data
     }

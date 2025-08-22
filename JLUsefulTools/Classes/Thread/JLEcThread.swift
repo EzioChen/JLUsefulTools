@@ -1,5 +1,5 @@
 //
-//  ECThread.swift
+//  JLECThread.swift
 //  JLUsefulTools
 //
 //  Created by EzioChan on 2021/9/1.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public class ECThread: NSObject {
+@objc public class JLECThread: NSObject {
     
     public typealias actions = ()->Void
     /// 异步执行

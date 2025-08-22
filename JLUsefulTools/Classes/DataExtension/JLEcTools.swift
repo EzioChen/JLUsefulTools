@@ -8,40 +8,132 @@
 
 import Foundation
 
-
-@objc public class JLTimeOut:NSObject {
-    public typealias timeoutBlock = (_ to:JLTimeOut)->()
-    private var timer:Timer?
-    private var number = 0
-    private var maxNumber = 0
-    private var timeBlock:timeoutBlock?
+@objc public class JLEcTimerHelper: NSObject {
+    private static let shared = JLEcTimerHelper()
+    private var timerDict: [String: Timer] = [:] 
+    private var timerCompletions: [String: (String) -> Void] = [:] 
+    private var timerRepeats: [String: Bool] = [:] 
     
-    public func start(_ time:Int,_ clouse:@escaping ()->(),_ timeOut:@escaping timeoutBlock) {
-        maxNumber = time
-        number = 0
-        timeBlock = timeOut
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        timer?.fire()
-        clouse()
-    }
-    @objc public func resetTime(){
-        number = 0
-    }
-    @objc public func timerAction(){
-        number+=1
-        if number >= maxNumber {
-            if let p = timeBlock {
-                p(self)
+    // MARK: - JLTimeOut 兼容方法
+    private var countdownTimers: [String: (current: Int, max: Int, block: (JLEcTimerHelper)->Void)] = [:]
+    
+    @objc public func startCountdown(duration: Int, 
+                                    onStart: @escaping ()->Void, 
+                                    onTimeout: @escaping (JLEcTimerHelper)->Void) {
+        let timerID = "countdown_\(UUID().uuidString)"
+        
+        countdownTimers[timerID] = (0, duration, onTimeout)
+        
+        let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
+            guard let self = self else {
+                timer.invalidate()
+                return
             }
-            timer?.invalidate()
+            
+            if var countdown = self.countdownTimers[timerID] {
+                countdown.current += 1
+                self.countdownTimers[timerID] = countdown
+                
+                if countdown.current >= countdown.max {
+                    countdown.block(self)
+                    timer.invalidate()
+                    self.countdownTimers.removeValue(forKey: timerID)
+                }
+            }
+        }
+        
+        timerDict[timerID] = timer
+        onStart()
+    }
+    
+    @objc public func resetCountdown() {
+        for (timerID, _) in countdownTimers {
+            if var countdown = countdownTimers[timerID] {
+                countdown.current = 0
+                countdownTimers[timerID] = countdown
+            }
         }
     }
     
-    @objc public func cancel(){
-        timer?.invalidate()
-        number = 0
+    @objc public func cancelCountdown() {
+        for (timerID, _) in countdownTimers {
+            timerDict[timerID]?.invalidate()
+            timerDict.removeValue(forKey: timerID)
+            countdownTimers.removeValue(forKey: timerID)
+        }
     }
     
+    // MARK: - JLEcTimerHelper 方法
+    @discardableResult
+    @objc public static func setTimeout(timeOut: Double, completion: @escaping (String) -> Void) -> String {
+        let timerID = "timer_\(UUID().uuidString)"
+        
+        let timer = Timer.scheduledTimer(
+            timeInterval: timeOut,
+            target: shared,
+            selector: #selector(timerAction(_:)),
+            userInfo: timerID,
+            repeats: false
+        )
+        
+        shared.timerDict[timerID] = timer
+        shared.timerCompletions[timerID] = completion
+        shared.timerRepeats[timerID] = false
+        return timerID
+    }
+    
+    @discardableResult
+    @objc public static func setInterval(interval: TimeInterval, completion: @escaping (String) -> Void) -> String {
+        let timerID = "interval_\(UUID().uuidString)"
+        
+        let timer = Timer.scheduledTimer(
+            timeInterval: interval,
+            target: shared,
+            selector: #selector(timerAction(_:)),
+            userInfo: timerID,
+            repeats: true
+        )
+        
+        shared.timerDict[timerID] = timer
+        shared.timerCompletions[timerID] = completion
+        shared.timerRepeats[timerID] = true
+        return timerID
+    }
+    
+    @objc public static func clearTimeout(timerID: String) {
+        stopTimer(timerID: timerID)
+    }
+    
+    @objc public static func clearInterval(timerID: String) {
+        stopTimer(timerID: timerID)
+    }
+    
+    @objc public static func stopAllTimers() {
+        for timerID in shared.timerDict.keys {
+            stopTimer(timerID: timerID)
+        }
+        shared.cancelCountdown()
+    }
+    
+    private static func stopTimer(timerID: String) {
+        guard let timer = shared.timerDict[timerID] else { return }
+        timer.invalidate()
+        shared.timerDict.removeValue(forKey: timerID)
+        shared.timerCompletions.removeValue(forKey: timerID)
+        shared.timerRepeats.removeValue(forKey: timerID)
+    }
+    
+    @objc private func timerAction(_ timer: Timer) {
+        guard let timerID = timer.userInfo as? String else { return }
+        
+        if let completion = timerCompletions[timerID] {
+            completion(timerID)
+        }
+        
+        if let repeats = timerRepeats[timerID], !repeats {
+            JLEcTimerHelper.stopTimer(timerID: timerID)
+        }
+    }
 }
 
 

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JLUsefulTools'
-  s.version          = '0.0.4'
-  s.summary          = '一个用于数据处理的库'
+  s.version          = '0.0.5'
+  s.summary          = '一个用于数据处理的库和 UI 相关的工具'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,30 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '基本内容包括数据大小端转换/Data的裁剪/数据打包/基础UI等内容'
+  s.description      = <<-DESC 
+**JLUsefulTools** 是一个用于数据处理的库和 UI 相关的工具，主要包括：
+- 数据处理：大小端转换、Data 裁剪、数据打包；
+- UI 工具：基于 SnapKit 与 RxSwift 的响应式 UI 组件；
+- 文件相关：文件浏览、导入导出等辅助功能。
+DESC
 
   s.homepage         = 'https://github.com/EzioChen/JLUsefulTools'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = 'MIT'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'EzioChan' => 'jackenwind@163.com' }
   s.source           = { :git => 'https://github.com/EzioChen/JLUsefulTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
+  s.platform         = :ios, '12.0'
+  s.swift_versions   = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
 
-  s.source_files = 'JLUsefulTools/Classes/**/*'
-  s.swift_versions = '5.0'
-  
+  s.source_files     = 'JLUsefulTools/Classes/**/*'
+
+  # 核心依赖
   s.dependency 'Alamofire', '>= 5.0.0'
   s.dependency 'SnapKit'
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
+  s.dependency 'FileBrowser'
+  s.dependency 'GCDWebServer'
   
   # s.resource_bundles = {
   #   'JLUsefulTools' => ['JLUsefulTools/Assets/*.png']

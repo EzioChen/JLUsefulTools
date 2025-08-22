@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-Target 'Pods-JLUsefulTools_Tests' in project 'Pods'
-➜ Explicit dependency on target 'Pods-JLUsefulTools_Example' in project 'Pods'
-Target 'Pods-JLUsefulTools_Example' in project 'Pods'
-➜ Explicit dependency on target 'JLUsefulTools' in project 'Pods'
-Target 'JLUsefulTools' in project 'Pods' (no dependencies)
